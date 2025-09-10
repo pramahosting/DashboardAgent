@@ -1,0 +1,12 @@
+streamlit
+pandas
+sqlalchemy
+psycopg2
+pymysql
+pyodbc
+pyhive
+hbase-thrift
+pyiceberg
+plotly
+ollama
+bcrypt
