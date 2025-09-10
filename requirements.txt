@@ -11,3 +11,5 @@ ollama
 bcrypt
 streamlit
 extra-streamlit-components
+mysql-connector-python
+
