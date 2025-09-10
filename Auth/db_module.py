@@ -14,8 +14,11 @@ MYSQL_PASSWORD = "Pks9948$1"
 MYSQL_DB = "auth_db"
 
 # ===== EMAIL SETTINGS =====
-EMAIL_USER = st.secrets["EMAIL_USER"]
-EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
+import os
+
+EMAIL_USER = os.environ.get("EMAIL_USER")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
@@ -156,3 +159,4 @@ def send_reset_email(email, token):
         st.success("Password reset link sent to your email.")
     except Exception as e:
         st.error(f"Error sending email: {e}")
+
