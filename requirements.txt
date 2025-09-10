@@ -1,4 +1,3 @@
-streamlit
 pandas
 sqlalchemy
 psycopg2
@@ -10,3 +9,5 @@ pyiceberg
 plotly
 ollama
 bcrypt
+streamlit
+extra-streamlit-components
